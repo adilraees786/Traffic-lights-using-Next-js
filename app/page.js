@@ -25,9 +25,12 @@ function TrafficLight() {
   }, [signal]);
 
   return (
-    <div className="flex justify-center items-center bg-slate-400 g h-screen">
+    <div className=" bg-slate-400 g h-screen">
+      <div className='text-center py-10'>
+        <h1 className='text-5xl font-semibold text-red-700'>Traffic Lights signals </h1>
+      </div>
     
-      <div className="bg-black p-6 flex gap-6 flex-col rounded-md shadow-[1px_1px_15px_5px_rgba(0,0,0,.5)]">
+      <div className="w-fit bg-black p-6 mx-auto my-16 flex gap-6 flex-col rounded-md shadow-[1px_1px_15px_5px_rgba(0,0,0,.5)]">
         <div
           className={`w-16 h-16 rounded-full  ${
             signal === 'red' ? 'bg-red-500' : 'bg-gray-300'
