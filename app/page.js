@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 function TrafficLight() {
   const [signal, setSignal] = useState('red');
 
+  document.title = "Traffic Light Signals";
+
   useEffect(() => {
     const interval = setInterval(() => {
       switch (signal) {
@@ -25,6 +27,8 @@ function TrafficLight() {
   }, [signal]);
 
   return (
+   
+    
     <div className=" bg-slate-400 g h-screen">
       <div className='text-center py-10'>
         <h1 className='text-5xl font-semibold text-red-700'>Traffic Lights signals </h1>
@@ -60,4 +64,6 @@ function TrafficLight() {
 }
 
 export default TrafficLight;
+
+
 
